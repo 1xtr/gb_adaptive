@@ -11,6 +11,10 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+.center {
+  padding: 0 calc(50vw - 278px / 2);
+}
+
 .button {
   width: 278px;
   height: 48px;
@@ -24,27 +28,31 @@ body {
 }
 .button_blue {
   background-color: #008DCD;
+  color: #ffffff;
 }
 
 .top {
   position: relative;
   min-height: 277px;
   min-width: 320px;
-  background: url("img/top-bg_small.jpg") no-repeat bottom right;
-  background-size: cover;
 }
 
 .header {
   height: 50vh;
-  padding: 27px 21px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  background: url("img/top-bg_small.jpg") no-repeat bottom right;
+  background-size: cover;
 }
 .header__switch {
   visibility: hidden;
   position: absolute;
   left: -999999px;
+}
+
+.logo-img {
+  padding: 27px 21px;
 }
 
 .menu {
@@ -54,6 +62,7 @@ body {
   color: #fff;
   font-size: 29px;
   display: block;
+  padding: 27px 21px;
 }
 .menu__label_close {
   display: none;
@@ -62,8 +71,73 @@ body {
 .send-box {
   height: 50vh;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
+}
+.send-box__h2 {
+  font-size: 32px;
+  line-height: 38px;
+}
+.send-box__p {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+}
+
+.about {
+  background-color: #f7f7f7;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 21px;
+}
+.about__img {
+  width: 278px;
+  height: 142px;
+}
+.about__h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+.about__p {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+}
+
+.steps {
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.steps__img {
+  padding: 6px 0;
+}
+.steps__item {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0;
+}
+.steps__h2 {
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: bold;
+  padding: 6px 0;
+  text-align: left;
+}
+.steps__p {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 6px 0;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */

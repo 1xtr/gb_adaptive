@@ -12,6 +12,9 @@ body
 @import "m320-767"
 @import "m768-1440"
 
+.center
+  padding: 0 calc(50vw - 278px / 2)
+
 .button
   width: 278px
   height: 48px
@@ -22,6 +25,7 @@ body
   line-height: 19px
   &_blue
     background-color: $siteColor1
+    color: #ffffff
 
 
 //@media (max-width: 767px)
@@ -29,19 +33,22 @@ body
   position: relative
   min-height: 277px
   min-width: 320px
-  background: url("img/top-bg_small.jpg") no-repeat bottom right
-  background-size: cover
 
 .header
   height: 50vh
-  padding: 27px 21px
   display: flex
-  align-items: center
+  align-items: flex-start
   justify-content: space-between
+  background: url("img/top-bg_small.jpg") no-repeat bottom right
+  background-size: cover
+
   &__switch
     visibility: hidden
     position: absolute
     left: -999999px
+
+.logo-img
+  padding: 27px 21px
 
 .menu
   display: none
@@ -49,11 +56,70 @@ body
     color: #fff
     font-size: 29px
     display: block
+    padding: 27px 21px
     &_close
       display: none
 
 .send-box
   height: 50vh
   display: flex
-  justify-content: center
+  flex-direction: column
+  justify-content: space-around
   align-items: center
+  background-color: #fff
+  text-align: center
+  &__h2
+    font-size: 32px
+    line-height: 38px
+  &__p
+    font-size: 24px
+    line-height: 29px
+    font-weight: bold
+
+// about div
+.about
+  background-color: #f7f7f7
+  height: 100vh
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-direction: column
+  padding: 21px
+  &__img
+    width: 278px
+    height: 142px
+  &__h3
+    font-size: 18px
+    line-height: 22px
+    font-weight: bold
+    text-align: center
+  &__p
+    font-size: 14px
+    line-height: 16px
+    text-align: justify
+
+// steps div
+
+.steps
+  @include flexbox
+  flex-direction: column
+  &__img
+    padding: 6px 0
+  &__item
+    //height: 50vh
+    display: flex
+    flex-direction: column
+    padding: 18px 0
+
+  &__h2
+    font-size: 26px
+    line-height: 31px
+    font-weight: bold
+    padding: 6px 0
+    text-align: left
+  &__p
+    font-size: 14px
+    line-height: 17px
+    padding: 6px 0
+    text-align: left
+
