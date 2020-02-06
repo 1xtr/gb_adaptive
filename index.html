@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Document</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
     <div class="top">
@@ -59,10 +60,10 @@
             <h2 class="steps__h2">Шаг 4</h2>
             <p class="steps__p">Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)</p>
         </div>
-        <div class="steps__footer">
-            <p class="steps__footer__text">Мы берём все заботы по доставке на себя!</p>
-            <a href="#" class="button button_blue">ОТПРАВИТЬ ПОСЫЛКУ</a>
-        </div>
+    </div>
+    <div class="steps__footer center">
+        <p class="steps__footer__text">Мы берём все заботы по доставке на себя!</p>
+        <a href="#" class="button button_blue">ОТПРАВИТЬ ПОСЫЛКУ</a>
     </div>
     <div class="callback center">
         <form action="#" class="callback__form">
@@ -70,9 +71,23 @@
             <label for="callback-tel" class="callback__p">Закажите звонок, и менеджер вам всё расскажет и объяснит</label>
             <input type="tel" class="callback__tel" placeholder="Ваш телефон" id="callback-tel">
             <a href="#" class="button button_yellow">ЗАКАЗАТЬ ЗВОНОК</a>
-            <input type="checkbox" id="152fz" checked>
-            <label for="152fz">Я согласен на обработку персональных данных</label>
+            <input type="checkbox" id="152fz" checked class="pers-data">
+            <label for="152fz" class="pers-data__label">Я согласен на обработку персональных данных</label>
         </form>
+    </div>
+    <div class="review center">
+        <h2 class="review__h2">ОТЗЫВЫ</h2>
+        <div class="review__box">
+            <img src="img/review-foto-1.jpg" alt="foto" class="review__foto">
+            <h3 class="review__name">Дарья</h3>
+            <p class="review_surname">La Intuition</p>
+            <p class="review__desc">Посылка: Товары</p>
+            <p class="review__desc">Откуда: Москва</p>
+            <p class="review__desc">Куда: Нижневартовск</p><br>
+            <p class="review__text">Отличный и качественный сервис. Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены, что помимо удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности (ведение адресной базы, выбор и вызов курьера в пару кликов).</p>
+        </div>
+        <a href="#" class="review__slide review__slide_left"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="review__slide review__slide_right"><i class="fas fa-chevron-right"></i></a>
     </div>
 </body>
 </html>

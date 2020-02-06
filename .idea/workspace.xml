@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12d9ee23-33ea-496d-aeb5-491f870fffe0" name="Default Changelist" comment="Changes 23:31">
+    <list default="true" id="12d9ee23-33ea-496d-aeb5-491f870fffe0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo_color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo_color2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/review-foto-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/review-foto-2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Group 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/about-cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/about-cloud.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
@@ -70,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580974973932</updated>
       <workItem from="1580974975166" duration="12292000" />
-      <workItem from="1581002596232" duration="14976000" />
+      <workItem from="1581002596232" duration="22481000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1580989430088</created>
@@ -93,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581018544627</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changes 23:31">
+      <created>1581021232745</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581021232745</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,10 +132,10 @@
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
     <state x="-1080" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581004624972" />
-    <state x="-915" y="134" key="CommitChangelistDialog2" timestamp="1581021108734">
+    <state x="-915" y="134" key="CommitChangelistDialog2" timestamp="1581029195060">
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
-    <state x="-915" y="134" key="CommitChangelistDialog2/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581021108734" />
+    <state x="-915" y="134" key="CommitChangelistDialog2/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581029195060" />
     <state x="-760" y="295" key="FileChooserDialogImpl" timestamp="1581003011986">
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
@@ -198,5 +212,9 @@
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
     <state x="-948" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581018554596" />
+    <state x="-909" y="84" width="737" height="909" key="find.popup" timestamp="1581021666687">
+      <screen x="-1080" y="-401" width="1080" height="1880" />
+    </state>
+    <state x="-909" y="84" width="737" height="909" key="find.popup/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581021666687" />
   </component>
 </project>

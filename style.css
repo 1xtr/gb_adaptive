@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,10 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 19px;
+  font-weight: bold;
+}
+.button:hover {
+  box-shadow: 0 4px 15px rgba(27, 170, 235, 0.45);
 }
 .button_blue {
   background-color: #008DCD;
@@ -93,12 +98,12 @@ body {
 
 .about {
   background-color: #f7f7f7;
-  height: 100vh;
+  height: calc(100vh - 48px);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding: 21px;
+  padding: 36px 21px;
 }
 .about__img {
   width: 278px;
@@ -146,6 +151,11 @@ body {
 .steps__footer {
   padding: 21px;
   background-color: #f7f7f7;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .steps__footer__text {
   font-size: 24px;
@@ -157,8 +167,12 @@ body {
 
 .callback {
   background-color: #008DCD;
+}
+.callback__form {
+  height: 283px;
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -167,14 +181,90 @@ body {
   line-height: 34px;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
 }
 .callback__p {
   font-size: 14px;
   line-height: 13px;
-  text-align: justify;
+  text-align: center;
 }
 .callback__tel {
   padding: 17px 24px;
+  width: 230px;
+  border-radius: 30px;
+  border: none;
+}
+
+.pers-data {
+  display: none;
+}
+.pers-data:checked + .pers-data__label::before {
+  font-family: FontAwesome, serif;
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+}
+.pers-data__label {
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+}
+.pers-data__label::before {
+  font-family: FontAwesome, serif;
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+}
+
+.review {
+  height: 324px;
+  position: relative;
+}
+.review__box {
+  padding: 0 25px;
+}
+.review__slide {
+  position: absolute;
+  color: #c4c4c4;
+  font-size: 12px;
+  top: 50%;
+}
+.review__slide_right {
+  right: 21px;
+}
+.review__h2 {
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  font-weight: bold;
+}
+.review__foto {
+  width: 100px;
+  height: 100px;
+  padding: 18px 18px 18px 0;
+  float: left;
+}
+.review__name {
+  padding-top: 18px;
+  padding-bottom: 6px;
+  font-size: 26px;
+  line-height: 31px;
+}
+.review__surname {
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.review__desc {
+  padding-bottom: 5px;
+  font-size: 10px;
+  line-height: 12px;
+}
+.review__text {
+  font-size: 12px;
+  line-height: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

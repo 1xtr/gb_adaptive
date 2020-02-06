@@ -23,9 +23,13 @@ body
   text-transform: uppercase
   font-size: 16px
   line-height: 19px
+  font-weight: bold
+  &:hover
+    box-shadow: 0 4px 15px rgba(27, 170, 235, 0.45)
   &_blue
     background-color: $siteColor1
     color: #fff
+
   &_yellow
     background-color: $siteColor3
     color: #000
@@ -82,12 +86,12 @@ body
 // about div
 .about
   background-color: #f7f7f7
-  height: 100vh
+  height: calc(100vh - 48px)
   display: flex
   justify-content: space-around
   align-items: center
   flex-direction: column
-  padding: 21px
+  padding: 36px 21px
   &__img
     width: 278px
     height: 142px
@@ -128,6 +132,9 @@ body
   &__footer
     padding: 21px
     background-color: #f7f7f7
+    text-align: center
+    @include flexbox
+    flex-direction: column
     &__text
       font-size: 24px
       line-height: 29px
@@ -138,18 +145,86 @@ body
 // callback div
 .callback
   background-color: $siteColor1
-  color: #fff
-  display: flex
-  justify-content: space-around
-  align-items: center
+
+  &__form
+    height: 283px
+    color: #fff
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
   &__h2
     font-size: 28px
     line-height: 34px
     font-weight: bold
     text-align: center
+    text-transform: uppercase
   &__p
     font-size: 14px
     line-height: 13px
-    text-align: justify
+    text-align: center
   &__tel
     padding: 17px 24px
+    width: 230px
+    border-radius: 30px
+    border: none
+.pers-data
+  display: none
+  &:checked + &__label::before
+    font-family: FontAwesome, serif
+    content: '\f14a'
+    width: 10px
+    height: 10px
+    margin-right: 8px
+  &__label
+    font-size: 10px
+    line-height: 12px
+    text-align: center
+    &::before
+      font-family: FontAwesome, serif
+      content: '\f0c8'
+      width: 10px
+      height: 10px
+      margin-right: 8px
+
+// Review div
+
+.review
+  height: 324px
+  position: relative
+  &__box
+    padding: 0 25px
+  &__slide
+    position: absolute
+    color: #c4c4c4
+    font-size: 12px
+    top: 50%
+    &_right
+      right: 21px
+
+  &__h2
+    font-size: 28px
+    line-height: 34px
+    text-align: center
+    font-weight: bold
+  &__foto
+    width: 100px
+    height: 100px
+    padding: 18px 18px 18px 0
+    float: left
+  &__name
+    padding-top: 18px
+    padding-bottom: 6px
+    font-size: 26px
+    line-height: 31px
+  &__surname
+    padding-bottom: 10px
+    font-size: 18px
+    line-height: 22px
+  &__desc
+    padding-bottom: 5px
+    font-size: 10px
+    line-height: 12px
+  &__text
+    font-size: 12px
+    line-height: 14px
