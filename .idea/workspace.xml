@@ -70,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580974973932</updated>
       <workItem from="1580974975166" duration="12292000" />
-      <workItem from="1581002596232" duration="23344000" />
+      <workItem from="1581002596232" duration="24724000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1580989430088</created>
@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581029212167</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changes 02:00">
+      <created>1581030040139</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581030040139</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +125,8 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="Changes 23:31" />
     <MESSAGE value="Changes 01:46" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes 01:46" />
+    <MESSAGE value="Changes 02:00" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes 02:00" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-948" y="198" key="#Deployment" timestamp="1580977762947">
@@ -133,10 +141,10 @@
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
     <state x="-1080" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581004624972" />
-    <state x="-915" y="134" key="CommitChangelistDialog2" timestamp="1581029210518">
+    <state x="-915" y="134" key="CommitChangelistDialog2" timestamp="1581030039070">
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
-    <state x="-915" y="134" key="CommitChangelistDialog2/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581029210518" />
+    <state x="-915" y="134" key="CommitChangelistDialog2/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581030039070" />
     <state x="-760" y="295" key="FileChooserDialogImpl" timestamp="1581003011986">
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>

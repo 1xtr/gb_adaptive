@@ -224,6 +224,7 @@ body {
 .review {
   height: 324px;
   position: relative;
+  padding-top: 20px;
 }
 .review__box {
   padding: 0 25px;
@@ -238,10 +239,6 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-}
-.review__slide:hover {
-  background-color: #B3B3B3;
-  color: #fff;
 }
 .review__slide_left {
   left: 0;
@@ -281,6 +278,34 @@ body {
   font-size: 12px;
   line-height: 14px;
   text-align: justify;
+  clear: both;
+}
+
+.advantages {
+  background-color: #f7f7f7;
+}
+.advantages__h2 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+.advantages__box {
+  display: flex;
+  flex-direction: column;
+}
+.advantages__img {
+  width: 58px;
+  height: 34px;
+}
+.advantages__img-cover {
+  width: 86px;
+  height: 86px;
+  border-radius: 43px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
