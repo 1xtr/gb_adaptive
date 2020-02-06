@@ -4,6 +4,8 @@
 
 a
   text-decoration: none
+  &:hover
+    cursor: pointer
 
 body
   font-family: 'PT Sans', sans-serif
@@ -194,13 +196,24 @@ body
   position: relative
   &__box
     padding: 0 25px
+    position: relative
   &__slide
     position: absolute
     color: #c4c4c4
     font-size: 12px
-    top: 50%
+    top: 0
+    z-index: 10
+    height: 100%
+    display: flex
+    align-items: center
+
+    &:hover
+      background-color: $siteColor6
+      color: #fff
+    &_left
+      left: 0
     &_right
-      right: 21px
+      right: 0
 
   &__h2
     font-size: 28px
@@ -228,3 +241,4 @@ body
   &__text
     font-size: 12px
     line-height: 14px
+    text-align: justify
