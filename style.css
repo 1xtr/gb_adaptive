@@ -11,4 +11,46 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+@media (max-width: 767px) {
+  .top {
+    position: relative;
+    min-height: 277px;
+    min-width: 320px;
+    background: url("img/top-bg_small.jpg") no-repeat bottom right;
+    background-size: cover;
+  }
+
+  .header {
+    height: 100vh;
+    padding: 27px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__switch {
+    visibility: hidden;
+    position: absolute;
+    left: -999999px;
+  }
+
+  .menu {
+    display: none;
+  }
+  .menu__label {
+    color: #fff;
+    font-size: 29px;
+    display: block;
+  }
+  .menu__label_close {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .top {
+    min-height: 413px;
+    background: url("img/top-bg_small.jpg") no-repeat bottom right;
+    background-size: cover;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

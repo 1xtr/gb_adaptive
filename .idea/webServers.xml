@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ba13d9ef-185f-4124-8dd3-ca53dfdb03f1" name="adaptive" url="https://adaptive.trendco.space">
+        <fileTransfer host="adaptive.trendco.space" port="22" accessType="SFTP" authAgent="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" muteSftpMessages="true" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
