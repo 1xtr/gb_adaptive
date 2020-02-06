@@ -12,4 +12,48 @@ body
 @import "m320-767"
 @import "m768-1440"
 
+.button
+  width: 278px
+  height: 48px
+  border-radius: 30px
+  @include flexbox
+  text-transform: uppercase
+  font-size: 16px
+  line-height: 19px
+  &_blue
+    background-color: $siteColor1
 
+
+//@media (max-width: 767px)
+.top
+  position: relative
+  min-height: 277px
+  min-width: 320px
+  background: url("img/top-bg_small.jpg") no-repeat bottom right
+  background-size: cover
+
+.header
+  height: 50vh
+  padding: 27px 21px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__switch
+    visibility: hidden
+    position: absolute
+    left: -999999px
+
+.menu
+  display: none
+  &__label
+    color: #fff
+    font-size: 29px
+    display: block
+    &_close
+      display: none
+
+.send-box
+  height: 50vh
+  display: flex
+  justify-content: center
+  align-items: center
