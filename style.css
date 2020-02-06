@@ -107,6 +107,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 36px 21px;
+  min-width: 278px;
 }
 .about__img {
   width: 278px;
@@ -129,6 +130,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-width: 278px;
 }
 .steps__img {
   padding: 6px 0;
@@ -159,6 +161,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-width: 278px;
 }
 .steps__footer__text {
   font-size: 24px;
@@ -170,6 +173,7 @@ body {
 
 .callback {
   background-color: #008DCD;
+  min-width: 278px;
 }
 .callback__form {
   height: 283px;
@@ -225,6 +229,7 @@ body {
   height: 324px;
   position: relative;
   padding-top: 20px;
+  min-width: 278px;
 }
 .review__box {
   padding: 0 25px;
@@ -283,6 +288,7 @@ body {
 
 .advantages {
   background-color: #f7f7f7;
+  min-width: 278px;
 }
 .advantages__container {
   display: flex;
