@@ -28,7 +28,11 @@ body {
 }
 .button_blue {
   background-color: #008DCD;
-  color: #ffffff;
+  color: #fff;
+}
+.button_yellow {
+  background-color: #FFCC00;
+  color: #000;
 }
 
 .top {
@@ -138,6 +142,39 @@ body {
   line-height: 17px;
   padding: 6px 0;
   text-align: left;
+}
+.steps__footer {
+  padding: 21px;
+  background-color: #f7f7f7;
+}
+.steps__footer__text {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.callback {
+  background-color: #008DCD;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.callback__h2 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+.callback__p {
+  font-size: 14px;
+  line-height: 13px;
+  text-align: justify;
+}
+.callback__tel {
+  padding: 17px 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
