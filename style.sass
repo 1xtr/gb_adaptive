@@ -17,6 +17,9 @@ body
 .center
   padding: 0 calc(50vw - 278px / 2)
 
+.padding-m320
+  padding: 27px 20px
+
 .button
   width: 278px
   height: 48px
@@ -31,11 +34,22 @@ body
   &_blue
     background-color: $siteColor1
     color: #fff
-
   &_yellow
     background-color: $siteColor3
     color: #000
 
+
+.title-m320
+  font-size: 28px
+  line-height: 34px
+  text-align: left
+  font-weight: bold
+  text-transform: uppercase
+  color: #000
+  &_white
+    color: #fff
+  &_padding
+    padding: 27px 21px
 
 //@media (max-width: 767px)
 .top
@@ -88,7 +102,6 @@ body
 // about div
 .about
   background-color: #f7f7f7
-  height: calc(100vh - 48px)
   display: flex
   justify-content: space-around
   align-items: center
@@ -196,12 +209,10 @@ body
 // Review div
 
 .review
-  height: 324px
   position: relative
-  padding-top: 20px
   min-width: 278px
   &__box
-    padding: 0 25px
+    padding: 12px 20px 0 20px
     position: relative
   &__slide
     position: absolute
@@ -226,10 +237,9 @@ body
   &__foto
     width: 100px
     height: 100px
-    padding: 18px 18px 18px 0
+    padding-right: 18px
     float: left
   &__name
-    padding-top: 18px
     padding-bottom: 6px
     font-size: 26px
     line-height: 31px
@@ -253,19 +263,14 @@ body
   min-width: 278px
   &__container
     display: flex
-    flex-flow: row wrap
-    justify-content: space-between
-  &__h2
-    font-size: 28px
-    line-height: 34px
-    font-weight: bold
-    text-align: center
-    padding: 25px 0
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 15px
   &__box
     display: flex
     flex-direction: column
     width: 86px
-    padding-bottom: 20px
+    padding-right: 5px
   &__img
     width: 58px
     height: 34px
@@ -280,3 +285,7 @@ body
     line-height: 12px
     text-align: center
     padding-top: 15px
+
+// garanty div
+
+
