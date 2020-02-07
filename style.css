@@ -15,6 +15,19 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+@-moz-document url-prefix() {
+  summary {
+    display: block;
+  }
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details:focus, details[open]:focus, summary:focus {
+  outline: none;
+}
+
 .center {
   padding: 0 calc(50vw - 278px / 2);
 }
@@ -378,7 +391,7 @@ body {
 }
 
 .faq {
-  background-color: #94D1EC;
+  background-color: #D2ECF7;
 }
 .faq__qustions {
   display: flex;
@@ -389,16 +402,37 @@ body {
 }
 .faq__details {
   background-color: #fff;
-  padding: 15px;
+  padding: 15px 25px;
   font-size: 14px;
   line-height: 17px;
   text-align: justify;
   min-height: 20px;
-  min-width: 278px;
+  min-width: 228px;
   border-radius: 32px;
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  margin: 10px 0;
+}
+.faq__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+details[open].faq__details > summary::after {
+  font-family: FontAwesome, serif;
+  content: "";
+  margin-left: 8px;
+  width: 10px;
+  color: #008DCD;
+}
+
+details.faq__details > summary::after {
+  font-family: FontAwesome, serif;
+  content: "";
+  margin-left: 8px;
+  width: 10px;
+  color: #008DCD;
 }
 
 /*# sourceMappingURL=style.css.map */
