@@ -467,6 +467,7 @@ details.faq__details > summary::after {
   align-items: center;
   flex-grow: 1;
   flex-flow: row wrap;
+  position: relative;
 }
 
 .footer {
