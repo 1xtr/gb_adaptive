@@ -16,6 +16,8 @@ body
 
 .center
   padding: 0 calc(50vw - 278px / 2)
+  &_margin
+    margin: 0 auto
 
 .padding-m320
   padding: 27px 20px
@@ -223,12 +225,10 @@ body
     height: 100%
     display: flex
     align-items: center
-
     &_left
       left: 0
     &_right
       right: 0
-
   &__h2
     font-size: 28px
     line-height: 34px
@@ -287,5 +287,31 @@ body
     padding-top: 15px
 
 // garanty div
+.garanty
+  &__header
+    display: flex
+    padding-bottom: 14px
+    align-items: center
+  &__box
+    position: relative
+    padding: 0 20px
+  &__icon
+    width: 62px
+    height: 62px
+    border-radius: 31px
+    background-color: #f7f7f7
+    @include flexbox
+    margin-right: 10px
+  &__img
+    width: 50%
+    height: 50%
 
-
+  &__ttl
+    font-size: 16px
+    line-height: 19px
+    text-align: left
+  &__text
+    font-size: 12px
+    line-height: 14px
+    text-align: justify
+    padding: 12px 0

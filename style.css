@@ -18,6 +18,9 @@ body {
 .center {
   padding: 0 calc(50vw - 278px / 2);
 }
+.center_margin {
+  margin: 0 auto;
+}
 
 .padding-m320 {
   padding: 27px 20px;
@@ -337,6 +340,41 @@ body {
   line-height: 12px;
   text-align: center;
   padding-top: 15px;
+}
+
+.garanty__header {
+  display: flex;
+  padding-bottom: 14px;
+  align-items: center;
+}
+.garanty__box {
+  position: relative;
+  padding: 0 20px;
+}
+.garanty__icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 31px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.garanty__img {
+  width: 50%;
+  height: 50%;
+}
+.garanty__ttl {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+}
+.garanty__text {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: justify;
+  padding: 12px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
