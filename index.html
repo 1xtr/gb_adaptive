@@ -14,7 +14,7 @@
 <body>
 <div class="top">
     <header class="header">
-        <a href="#"><img alt="logo" class="logo-img" src="img/logo_white.png"></a>
+        <a href="#"><img alt="logo" class="logo-img_top" src="img/logo_white.png"></a>
         <ul class="menu">
             <li class="menu__list"><a class="menu__link" href="#">Главная</a></li>
             <li class="menu__list"><a class="menu__link" href="#">Описание</a></li>
@@ -201,18 +201,32 @@
 <footer class="footer padding-m320">
     <form action="#" class="callback__form callback__form_footer">
         <h2 class="title-m320">Остались вопросы?</h2>
-        <input class="callback__tel" id="callback-tel" placeholder="Ваш телефон" type="tel">
+        <input class="callback__tel callback__tel__footer" id="callback-tel_footer" placeholder="Ваш телефон" type="tel">
         <a class="button button_blue" href="#">ЗАКАЗАТЬ ЗВОНОК</a>
         <input checked class="pers-data" id="152fz-footer" type="checkbox">
         <label class="pers-data__label" for="152fz-footer">Я согласен на обработку персональных данных</label>
-        <hr class="footer__hr">
-        <a href="#"><img alt="logo" class="logo-img" src="img/logo_color2.png"></a>
-        <hr class="footer__hr">
-        <div class="footer__bottom">
-            <p class="footer__copyrights">© Сами копипастим и вам разрешаем</p>
-            <div class="social-links"><i class="fab fa-vk"></i><i class="fab fa-instagram"></i><i class="fab fa-facebook-f"></i></div>
-            <p class="footer__copyrights">Задизайнено мной</p></div>
     </form>
+    <hr class="footer__hr">
+    <div class="site-menu">
+        <a href="#"><img alt="logo" class="logo-img_footer" src="img/logo_color2.png"></a>
+        <ul class="menu">
+            <li class="menu__list"><a class="menu__link" href="#">Главная</a></li>
+            <li class="menu__list"><a class="menu__link" href="#">Описание</a></li>
+            <li class="menu__list"><a class="menu__link" href="#">Преимущества</a></li>
+            <li class="menu__list"><a class="menu__link" href="#">Отзывы</a></li>
+            <li class="menu__list"><a class="menu__link" href="#">Партнеры</a></li>
+            <li class="menu__list"><a class="menu__link" href="#">Гарантии</a></li>
+            <li class="menu__list"><a class="menu__link" href="#">FAQ</a></li>
+        </ul>
+        <input class="header__switch" id="top-menu" type="checkbox">
+        <label class="menu__label menu__label_footer" for="top-menu"><i class="fas fa-bars"></i></label>
+        <label class="menu__label_close menu__label_footer" for="top-menu"><i class="fas fa-times"></i></label>
+    </div>
+    <hr class="footer__hr">
+    <div class="footer__bottom">
+        <p class="footer__copyrights">© Сами копипастим и вам разрешаем</p>
+        <div class="social-links"><i class="fab fa-vk"></i><i class="fab fa-instagram"></i><i class="fab fa-facebook-f"></i></div>
+        <p class="footer__copyrights">Задизайнено мной</p></div>
 </footer>
 
 </body>

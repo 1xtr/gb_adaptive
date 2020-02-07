@@ -13,7 +13,7 @@ body
 @import "vars"
 @import "m320-767"
 @import "m768-1440"
-
+@import "menu"
 // отключаем маркер в Firefox у details - summary
 @-moz-document url-prefix()
   summary
@@ -86,7 +86,11 @@ details:focus, details[open]:focus, summary:focus
     left: -999999px
 
 .logo-img
-  padding: 27px 21px
+  &_top
+    padding: 27px 21px
+  &_footer
+    padding: 25px 0 25px 0
+    height: 37px
 
 .menu
   display: none
@@ -95,6 +99,10 @@ details:focus, details[open]:focus, summary:focus
     font-size: 29px
     display: block
     padding: 27px 21px
+    &_footer
+      color: #000
+      padding: 25px 15px 25px 0
+
     &_close
       display: none
 
@@ -182,7 +190,7 @@ details:focus, details[open]:focus, summary:focus
   min-width: 278px
 
   &__form
-    height: 283px
+    min-height: 283px
     color: #fff
     display: flex
     flex-direction: column
@@ -190,6 +198,7 @@ details:focus, details[open]:focus, summary:focus
     align-items: center
     &_footer
       color: #000
+      min-height: 180px
   &__h2
     font-size: 28px
     line-height: 34px
@@ -205,6 +214,9 @@ details:focus, details[open]:focus, summary:focus
     width: 230px
     border-radius: 30px
     border: none
+    &__footer
+      background-color: inherit
+      border: 1px solid #000
 .pers-data
   display: none
   &:checked + &__label::before
@@ -376,16 +388,30 @@ details.faq__details > summary::after
 
 .partners
   min-height: 58px
-
+  &__box
+    @include flexbox
+    flex-grow: 1
+    flex-flow: row wrap
 
 
 .footer
   background-color: #e9e9e9
   color: #000
+  min-width: 278px
+  @include flexbox
+  flex-direction: column
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-width: 280px
   &__hr
     color: #c4c4c4
     height: 1px
-    min-width: 291px
+    width: 280px
+  &__copyrights
+    font-size: 10px
+    line-height: 12px
 
 .social-links
   display: none

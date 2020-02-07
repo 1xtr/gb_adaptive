@@ -15,6 +15,13 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+.site-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+}
+
 @-moz-document url-prefix() {
   summary {
     display: block;
@@ -98,8 +105,12 @@ details:focus, details[open]:focus, summary:focus {
   left: -999999px;
 }
 
-.logo-img {
+.logo-img_top {
   padding: 27px 21px;
+}
+.logo-img_footer {
+  padding: 25px 0 25px 0;
+  height: 37px;
 }
 
 .menu {
@@ -110,6 +121,10 @@ details:focus, details[open]:focus, summary:focus {
   font-size: 29px;
   display: block;
   padding: 27px 21px;
+}
+.menu__label_footer {
+  color: #000;
+  padding: 25px 15px 25px 0;
 }
 .menu__label_close {
   display: none;
@@ -212,7 +227,7 @@ details:focus, details[open]:focus, summary:focus {
   min-width: 278px;
 }
 .callback__form {
-  height: 283px;
+  min-height: 283px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -221,6 +236,7 @@ details:focus, details[open]:focus, summary:focus {
 }
 .callback__form_footer {
   color: #000;
+  min-height: 180px;
 }
 .callback__h2 {
   font-size: 28px;
@@ -239,6 +255,10 @@ details:focus, details[open]:focus, summary:focus {
   width: 230px;
   border-radius: 30px;
   border: none;
+}
+.callback__tel__footer {
+  background-color: inherit;
+  border: 1px solid #000;
 }
 
 .pers-data {
@@ -441,15 +461,37 @@ details.faq__details > summary::after {
 .partners {
   min-height: 58px;
 }
+.partners__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-flow: row wrap;
+}
 
 .footer {
   background-color: #e9e9e9;
   color: #000;
+  min-width: 278px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
 }
 .footer__hr {
   color: #c4c4c4;
   height: 1px;
-  min-width: 291px;
+  width: 280px;
+}
+.footer__copyrights {
+  font-size: 10px;
+  line-height: 12px;
 }
 
 .social-links {
