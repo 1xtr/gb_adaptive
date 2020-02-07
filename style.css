@@ -377,4 +377,28 @@ body {
   padding: 12px 0;
 }
 
+.faq {
+  background-color: #94D1EC;
+}
+.faq__qustions {
+  display: flex;
+  flex-direction: column;
+}
+.faq__answer {
+  padding-top: 15px;
+}
+.faq__details {
+  background-color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: justify;
+  min-height: 20px;
+  min-width: 278px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
