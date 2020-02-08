@@ -1,8 +1,9 @@
 function blur_body() {
-    if (document.getElementById("top-menu").checked) {
-        document.getElementById('body').className = "blured";
+    let blur = document.getElementById('blur').className;
+    if (blur == "blur_active") {
+        blur = "blur";
     } else {
-        document.getElementById('body').className = "";
+        blur += "_active";
     }
-
+    console.log(blur);
 }
