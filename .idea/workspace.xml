@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="12d9ee23-33ea-496d-aeb5-491f870fffe0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_menu.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_menu.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style.sass" afterDir="false" />
@@ -79,7 +79,8 @@
       <updated>1580974973932</updated>
       <workItem from="1580974975166" duration="12292000" />
       <workItem from="1581002596232" duration="26331000" />
-      <workItem from="1581082853167" duration="22738000" />
+      <workItem from="1581082853167" duration="23533000" />
+      <workItem from="1581171295360" duration="8505000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1580989430088</created>
@@ -193,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581118040602</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Changes 02/08/20 02-33&#10;Mobile 320">
+      <created>1581118466233</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1581118466233</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +220,8 @@
     <MESSAGE value="Changes 02/07/20 23-20&#10;FAQ" />
     <MESSAGE value="Changes 02/07/20&#10;FAQ" />
     <MESSAGE value="Changes 02/07/20&#10;footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes 02/07/20&#10;footer" />
+    <MESSAGE value="Changes 02/08/20 02-33&#10;Mobile 320" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes 02/08/20 02-33&#10;Mobile 320" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-948" y="198" key="#Deployment" timestamp="1580977762947">
@@ -227,10 +236,10 @@
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
     <state x="-1080" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581004624972" />
-    <state x="-915" y="134" key="CommitChangelistDialog2" timestamp="1581118039524">
+    <state x="-915" y="-7" width="749" height="970" key="CommitChangelistDialog2" timestamp="1581184474091">
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
-    <state x="-915" y="134" key="CommitChangelistDialog2/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581118039524" />
+    <state x="-915" y="-7" width="749" height="970" key="CommitChangelistDialog2/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581184474091" />
     <state x="-760" y="295" key="FileChooserDialogImpl" timestamp="1581003011986">
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
@@ -303,10 +312,10 @@
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
     <state x="-1039" y="182" key="SettingsEditor/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581101097402" />
-    <state x="-948" y="273" key="Vcs.Push.Dialog.v2" timestamp="1581110086350">
+    <state x="-948" y="273" key="Vcs.Push.Dialog.v2" timestamp="1581118468271">
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
-    <state x="-948" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581110086350" />
+    <state x="-948" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1080.-401.1080.1880@-1080.-401.1080.1880" timestamp="1581118468271" />
     <state x="-909" y="84" width="737" height="909" key="find.popup" timestamp="1581021666687">
       <screen x="-1080" y="-401" width="1080" height="1880" />
     </state>
