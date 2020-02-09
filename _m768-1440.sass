@@ -1,9 +1,29 @@
 @media (min-width: 768px) and (max-width: 1439px)
+  .center
+    padding: 0 calc(50% - 350px)
   .logo-img
     &_top
       padding: 27px 34px
   .menu__label
-    padding: 27px 34px
+    display: none
+
+  .top-menu
+    display: flex
+    align-items: center
+    flex-grow: 1
+    justify-content: space-around
+    &__link
+      display: inline-block
+      color: #fff
+      font-size: 14px
+      line-height: 17px
+      box-sizing: border-box
+      padding: 35px 10px
+      &:hover
+        background-color: $siteColor1
+    &__list
+      list-style: none
+
   .header
     min-height: 413px
   .send-box
@@ -15,8 +35,8 @@
     background-color: transparent
     color: #fff
     align-items: flex-start
-    padding-top: 115px
-    padding-left: 34px
+    margin-top: 115px
+    margin-left: 34px
     &__h2
       font-size: 44px
       line-height: 53px
@@ -28,16 +48,15 @@
   .about
     flex-direction: row-reverse
     justify-content: space-between
-    padding-top: 50px
+    padding: 50px 34px 34px
     &__content
-      padding: 12px
       width: 278px
     &__img
       width: 400px
     &__h3
       position: absolute
-      top: 0
-      left: 21px
+      top: 10px
+      left: 34px
       font-size: 36px
       line-height: 43px
 
@@ -49,4 +68,13 @@
     &__item
       display: block
       width: 50%
-      padding: 0 15px
+      padding: 0 20px
+      box-sizing: border-box
+    &__footer
+      padding-top: 21px
+      padding-bottom: 21px
+
+
+  .callback
+    &__form
+      min-height: 200px
