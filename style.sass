@@ -11,9 +11,7 @@ body
   font-family: 'PT Sans', sans-serif
 
 @import "vars"
-@import "m320-767"
-@import "m768-1440"
-@import "menu"
+
 // отключаем маркер в Firefox у details - summary
 @-moz-document url-prefix()
   summary
@@ -25,15 +23,24 @@ summary::-webkit-details-marker
 details:focus, details[open]:focus, summary:focus
   outline: none
 
+details[open].faq__details > summary::after
+    font-family: FontAwesome, serif
+    content: '\f077'
+    margin-left: 8px
+    width: 10px
+    color: $siteColor1
+details.faq__details > summary::after
+  font-family: FontAwesome, serif
+  content: '\f078'
+  margin-left: 8px
+  width: 10px
+  color: $siteColor1
 
 
 .center
   padding: 0 calc(50vw - 278px / 2)
   &_margin
     margin: 0 auto
-
-.padding-m320
-  padding: 27px 20px
 
 .button
   width: 278px
@@ -53,6 +60,8 @@ details:focus, details[open]:focus, summary:focus
     background-color: $siteColor3
     color: #000
 
+.padding-m320
+  padding: 27px 20px
 
 .title-m320
   font-size: 28px
@@ -73,7 +82,7 @@ details:focus, details[open]:focus, summary:focus
   //min-width: 320px
 
 .header
-  height: 50vh
+  min-height: 50vh
   display: flex
   align-items: flex-start
   justify-content: space-between
@@ -114,6 +123,7 @@ details:focus, details[open]:focus, summary:focus
 
 // about div
 .about
+  position: relative
   background-color: #f7f7f7
   display: flex
   justify-content: space-around
@@ -121,9 +131,14 @@ details:focus, details[open]:focus, summary:focus
   flex-direction: column
   padding: 21px
   min-width: 278px
+  &__content
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
   &__img
     width: 278px
-    height: 142px
+
   &__h3
     font-size: 18px
     line-height: 22px
@@ -138,15 +153,17 @@ details:focus, details[open]:focus, summary:focus
 // steps div
 
 .steps
-  @include flexbox
-  flex-direction: column
-  min-width: 278px
+  //@include flexbox
+  //flex-direction: column
+  //min-width: 278px
+  padding: 21px
   &__img
-    padding: 6px 0
+    //padding: 6px 0
+    width: 100%
   &__item
     //height: 50vh
-    display: flex
-    flex-direction: column
+    //display: block
+    //flex-direction: column
     padding: 18px 0
 
   &__h2
@@ -364,18 +381,7 @@ details:focus, details[open]:focus, summary:focus
     justify-content: space-between
     align-items: center
 
-details[open].faq__details > summary::after
-      font-family: FontAwesome, serif
-      content: '\f077'
-      margin-left: 8px
-      width: 10px
-      color: $siteColor1
-details.faq__details > summary::after
-      font-family: FontAwesome, serif
-      content: '\f078'
-      margin-left: 8px
-      width: 10px
-      color: $siteColor1
+
 
 // partners div
 
@@ -431,11 +437,12 @@ details.faq__details > summary::after
     display: none
 
 .nav
-  position: absolute
+  //display: none
+  position: fixed
   right: -100%
   background-color: #fff
   width: 100%
-  transition: all 0.5s
+  transition: all 0.3s
   z-index: 2000
   &__header
     display: flex
@@ -488,3 +495,8 @@ details.faq__details > summary::after
     z-index: 1000
     filter: blur(5px) grayscale(80%)
     background-color: #00000033
+
+
+@import "1440+"
+@import "m768-1440"
+@import "menu"

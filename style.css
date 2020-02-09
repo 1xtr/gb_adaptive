@@ -15,13 +15,6 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
-.site-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 280px;
-}
-
 @-moz-document url-prefix() {
   summary {
     display: block;
@@ -35,15 +28,27 @@ details:focus, details[open]:focus, summary:focus {
   outline: none;
 }
 
+details[open].faq__details > summary::after {
+  font-family: FontAwesome, serif;
+  content: "";
+  margin-left: 8px;
+  width: 10px;
+  color: #008DCD;
+}
+
+details.faq__details > summary::after {
+  font-family: FontAwesome, serif;
+  content: "";
+  margin-left: 8px;
+  width: 10px;
+  color: #008DCD;
+}
+
 .center {
   padding: 0 calc(50vw - 278px / 2);
 }
 .center_margin {
   margin: 0 auto;
-}
-
-.padding-m320 {
-  padding: 27px 20px;
 }
 
 .button {
@@ -70,6 +75,10 @@ details:focus, details[open]:focus, summary:focus {
   color: #000;
 }
 
+.padding-m320 {
+  padding: 27px 20px;
+}
+
 .title-m320 {
   font-size: 28px;
   line-height: 34px;
@@ -91,7 +100,7 @@ details:focus, details[open]:focus, summary:focus {
 }
 
 .header {
-  height: 50vh;
+  min-height: 50vh;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -135,6 +144,7 @@ details:focus, details[open]:focus, summary:focus {
 }
 
 .about {
+  position: relative;
   background-color: #f7f7f7;
   display: flex;
   justify-content: space-around;
@@ -143,9 +153,14 @@ details:focus, details[open]:focus, summary:focus {
   padding: 21px;
   min-width: 278px;
 }
+.about__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .about__img {
   width: 278px;
-  height: 142px;
 }
 .about__h3 {
   font-size: 18px;
@@ -162,18 +177,12 @@ details:focus, details[open]:focus, summary:focus {
 }
 
 .steps {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-width: 278px;
+  padding: 21px;
 }
 .steps__img {
-  padding: 6px 0;
+  width: 100%;
 }
 .steps__item {
-  display: flex;
-  flex-direction: column;
   padding: 18px 0;
 }
 .steps__h2 {
@@ -427,22 +436,6 @@ details:focus, details[open]:focus, summary:focus {
   align-items: center;
 }
 
-details[open].faq__details > summary::after {
-  font-family: FontAwesome, serif;
-  content: "";
-  margin-left: 8px;
-  width: 10px;
-  color: #008DCD;
-}
-
-details.faq__details > summary::after {
-  font-family: FontAwesome, serif;
-  content: "";
-  margin-left: 8px;
-  width: 10px;
-  color: #008DCD;
-}
-
 .partners {
   min-height: 58px;
 }
@@ -507,11 +500,11 @@ details.faq__details > summary::after {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   right: -100%;
   background-color: #fff;
   width: 100%;
-  transition: all 0.5s;
+  transition: all 0.3s;
   z-index: 2000;
 }
 .nav__header {
@@ -577,6 +570,86 @@ details.faq__details > summary::after {
   z-index: 1000;
   filter: blur(5px) grayscale(80%);
   background-color: #00000033;
+}
+
+@media (min-width: 1440px) {
+  .header {
+    min-height: 525px;
+    background: url("img/top-bg.jpg") no-repeat bottom right;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .logo-img_top {
+    padding: 27px 34px;
+  }
+
+  .menu__label {
+    padding: 27px 34px;
+  }
+
+  .header {
+    min-height: 413px;
+  }
+
+  .send-box {
+    position: absolute;
+    width: 400px;
+    height: 245px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: #fff;
+    align-items: flex-start;
+    padding-top: 115px;
+    padding-left: 34px;
+  }
+  .send-box__h2 {
+    font-size: 44px;
+    line-height: 53px;
+    text-align: left;
+  }
+  .send-box__p {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .about {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  .about__content {
+    padding: 12px;
+    width: 278px;
+  }
+  .about__img {
+    width: 400px;
+  }
+  .about__h3 {
+    position: absolute;
+    top: 0;
+    left: 21px;
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .steps__item {
+    display: block;
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+.site-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
 }
 
 /*# sourceMappingURL=style.css.map */
