@@ -500,7 +500,8 @@ details.faq__details > summary::after {
 }
 
 .nav {
-  position: fixed;
+  display: none;
+  position: absolute;
   right: -100%;
   background-color: #fff;
   width: 100%;
