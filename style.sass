@@ -1,0 +1,507 @@
+*
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+  &:hover
+    cursor: pointer
+
+body
+  font-family: 'PT Sans', sans-serif
+
+@import "vars"
+
+// отключаем маркер в Firefox у details - summary
+@-moz-document url-prefix()
+  summary
+    display: block
+
+summary::-webkit-details-marker
+  display: none
+
+details:focus, details[open]:focus, summary:focus
+  outline: none
+
+details[open].faq__details > summary::after
+    font-family: FontAwesome, serif
+    content: '\f077'
+    margin-left: 8px
+    width: 10px
+    color: $siteColor1
+details.faq__details > summary::after
+  font-family: FontAwesome, serif
+  content: '\f078'
+  margin-left: 8px
+  width: 10px
+  color: $siteColor1
+
+
+.center
+  padding: 0 calc(50vw - 278px / 2)
+  &_margin
+    margin: 0 auto
+
+.button
+  width: 278px
+  height: 48px
+  border-radius: 30px
+  @include flexbox
+  text-transform: uppercase
+  font-size: 16px
+  line-height: 19px
+  font-weight: bold
+  &:hover
+    box-shadow: 0 4px 15px rgba(27, 170, 235, 0.45)
+  &_blue
+    background-color: $siteColor1
+    color: #fff
+  &_yellow
+    background-color: $siteColor3
+    color: #000
+
+.padding-m320
+  padding: 27px 20px
+
+.title-m320
+  font-size: 28px
+  line-height: 34px
+  text-align: left
+  font-weight: bold
+  text-transform: uppercase
+  color: #000
+  &_white
+    color: #fff
+  &_padding
+    padding: 27px 21px
+
+//@media (max-width: 767px)
+.top
+  position: relative
+  min-height: 277px
+  //min-width: 320px
+
+.header
+  min-height: 50vh
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  background: url("img/top-bg_small.jpg") no-repeat bottom right
+  background-size: cover
+
+  &__switch
+    visibility: hidden
+    position: absolute
+    left: -999999px
+    &:checked + .nav
+      right: 0
+      //box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8)
+
+
+.logo-img
+  &_top
+    padding: 27px 21px
+  &_footer
+    padding: 25px 0 25px 0
+    height: 37px
+
+.send-box
+  height: 50vh
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  background-color: #fff
+  text-align: center
+  &__h2
+    font-size: 32px
+    line-height: 38px
+  &__p
+    font-size: 24px
+    line-height: 29px
+    font-weight: bold
+
+// about div
+.about
+  position: relative
+  background-color: #f7f7f7
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-direction: column
+  padding: 21px
+  min-width: 278px
+  &__content
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+  &__img
+    width: 278px
+
+  &__h3
+    font-size: 18px
+    line-height: 22px
+    font-weight: bold
+    text-align: center
+    padding: 5px
+  &__p
+    font-size: 14px
+    line-height: 16px
+    text-align: justify
+    padding-bottom: 15px
+// steps div
+
+.steps
+  //@include flexbox
+  //flex-direction: column
+  //min-width: 278px
+  padding: 21px
+  &__img
+    //padding: 6px 0
+    width: 100%
+  &__item
+    //height: 50vh
+    //display: block
+    //flex-direction: column
+    padding: 18px 0
+
+  &__h2
+    font-size: 26px
+    line-height: 31px
+    font-weight: bold
+    padding: 6px 0
+    text-align: left
+  &__p
+    font-size: 14px
+    line-height: 17px
+    padding: 6px 0
+    text-align: left
+  &__footer
+    padding: 21px
+    background-color: #f7f7f7
+    text-align: center
+    @include flexbox
+    flex-direction: column
+    min-width: 278px
+    &__text
+      font-size: 24px
+      line-height: 29px
+      text-align: center
+      font-weight: bold
+      margin-bottom: 16px
+
+// callback div
+.callback
+  background-color: $siteColor1
+  min-width: 278px
+
+  &__form
+    min-height: 250px
+    color: #fff
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    &_black-mh180
+      color: #000
+      min-height: 180px
+
+  &__h2
+    font-size: 28px
+    line-height: 34px
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+  &__p
+    font-size: 14px
+    line-height: 13px
+    text-align: center
+  &__tel
+    padding: 17px 24px
+    width: 230px
+    border-radius: 30px
+    border: none
+    &__footer
+      background-color: inherit
+      border: 1px solid #000
+
+
+.pers-data
+  display: none
+  &:checked + &__label::before
+    font-family: FontAwesome, serif
+    content: '\f14a'
+    width: 10px
+    height: 10px
+    margin-right: 8px
+  &__label
+    font-size: 10px
+    line-height: 12px
+    text-align: center
+    &::before
+      font-family: FontAwesome, serif
+      content: '\f0c8'
+      width: 10px
+      height: 10px
+      margin-right: 8px
+
+// Review div
+
+.review
+  position: relative
+  min-width: 278px
+  &__box
+    padding: 12px 20px 0 20px
+    position: relative
+  &__slide
+    position: absolute
+    color: #c4c4c4
+    font-size: 12px
+    top: 0
+    z-index: 10
+    height: 100%
+    display: flex
+    align-items: center
+    &_left
+      left: 0
+    &_right
+      right: 0
+  &__h2
+    font-size: 28px
+    line-height: 34px
+    text-align: center
+    font-weight: bold
+  &__foto
+    width: 100px
+    height: 100px
+    padding-right: 18px
+    float: left
+  &__name
+    padding-bottom: 6px
+    font-size: 26px
+    line-height: 31px
+  &__surname
+    padding-bottom: 10px
+    font-size: 18px
+    line-height: 22px
+  &__desc
+    padding-bottom: 5px
+    font-size: 10px
+    line-height: 12px
+  &__text
+    font-size: 12px
+    line-height: 14px
+    text-align: justify
+    clear: both
+
+//advantages
+.advantages
+  background-color: #f7f7f7
+  min-width: 278px
+  &__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 15px
+  &__box
+    display: flex
+    flex-direction: column
+    width: 86px
+    padding-right: 5px
+  &__img
+    width: 58px
+    height: 34px
+    &-cover
+      width: 86px
+      height: 86px
+      border-radius: 43px
+      background-color: #fff
+      @include flexbox
+  &__text
+    font-size: 10px
+    line-height: 12px
+    text-align: center
+    padding-top: 15px
+
+// garanty div
+.garanty
+  &__header
+    display: flex
+    padding-bottom: 14px
+    align-items: center
+  &__box
+    position: relative
+    padding: 0 20px
+  &__icon
+    width: 62px
+    height: 62px
+    border-radius: 31px
+    background-color: #f7f7f7
+    @include flexbox
+    margin-right: 10px
+  &__img
+    width: 50%
+    height: 50%
+
+  &__ttl
+    font-size: 16px
+    line-height: 19px
+    text-align: left
+  &__text
+    font-size: 12px
+    line-height: 14px
+    text-align: justify
+    padding: 12px 0
+
+// FAQ div
+
+.faq
+  background-color: #D2ECF7
+  &__qustions
+    display: flex
+    flex-direction: column
+  &__answer
+    padding-top: 15px
+  &__details
+    background-color: #fff
+    padding: 15px 25px
+    font-size: 14px
+    line-height: 17px
+    text-align: justify
+    min-height: 20px
+    min-width: 228px
+    border-radius: 32px
+    display: flex
+    align-items: center
+    margin: 10px 0
+
+  &__summary
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+
+// partners div
+
+.partners
+  min-height: 58px
+
+  &__box
+    @include flexbox
+    flex-grow: 1
+    flex-flow: row wrap
+    position: relative
+
+
+.footer
+  background-color: #e9e9e9
+  color: #000
+  min-width: 278px
+  @include flexbox
+  flex-direction: column
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-width: 280px
+  &__hr
+    color: #c4c4c4
+    height: 1px
+    width: 280px
+  &__copyrights
+    font-size: 10px
+    line-height: 12px
+
+.social-links
+  display: flex
+
+  &_nav
+    justify-content: space-around
+    align-items: center
+    padding: 15px 0
+
+  &__link
+    @include flexbox
+    width: 36px
+    height: 36px
+    background-color: $siteColor1
+    color: #fff
+    border-radius: 18px
+    transition: all .5s
+    &:hover
+      box-shadow: 0 0 5px 5px $siteColor6
+
+  &__footer-m320
+    display: none
+
+.nav
+  display: none
+  position: absolute
+  right: -100%
+  background-color: #fff
+  width: 100%
+  transition: all 0.3s
+  z-index: 2000
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 80px
+
+  &__logo-img
+    height: 48px
+    padding: 15px 25px
+
+.top-menu
+  display: none
+
+
+.menu
+  display: block
+  &__list
+    list-style: none
+  &__link
+    font-size: 18px
+    line-height: 22px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 6px 25px
+    color: #000
+    transition: all .5s
+    &:hover
+      color: #ffffff
+      background-color: $siteColor1
+  &__label
+    color: #fff
+    font-size: 29px
+    display: block
+    padding: 27px 21px
+    &_footer
+      color: #000
+      padding: 25px 15px 25px 0
+
+    &_close
+      @include flexbox
+      font-size: 40px
+      padding: 15px 25px
+      &:hover
+        cursor: pointer
+
+.blur
+  position: absolute
+  &_active
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 1000
+    filter: blur(5px) grayscale(80%)
+    background-color: #00000033
+
+
+@import "1440+"
+@import "m768-1440"
+@import "menu"
